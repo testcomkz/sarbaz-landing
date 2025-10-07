@@ -29,10 +29,34 @@ export function Navbar() {
         </div>
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6 text-sm">
-          <a href="#s2" className="hover:text-primary">{t.nav.mission}</a>
-          <a href="#s3" className="hover:text-primary">{t.nav.program}</a>
-          <a href="#s4" className="hover:text-primary">{t.nav.advantages}</a>
-          <a href="#s5" className="hover:text-primary">{t.nav.contacts}</a>
+          <a
+            href="#s2"
+            className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
+          >
+            {t.nav.mission}
+            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+          </a>
+          <a
+            href="#s3"
+            className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
+          >
+            {t.nav.program}
+            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+          </a>
+          <a
+            href="#s4"
+            className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
+          >
+            {t.nav.advantages}
+            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+          </a>
+          <a
+            href="#s5"
+            className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
+          >
+            {t.nav.contacts}
+            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+          </a>
         </nav>
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Language switch (desktop only) */}
@@ -72,10 +96,22 @@ export function Navbar() {
                   <span className="font-heading text-base font-bold uppercase">Бір күн арнайы қызметте</span>
                 </div>
                 <nav className="flex flex-col px-4 py-6 gap-2 text-sm border-b border-border/60">
-                  <a href="#s2" className="py-2 hover:text-primary">{t.nav.mission}</a>
-                  <a href="#s3" className="py-2 hover:text-primary">{t.nav.program}</a>
-                  <a href="#s4" className="py-2 hover:text-primary">{t.nav.advantages}</a>
-                  <a href="#s5" className="py-2 hover:text-primary">{t.nav.contacts}</a>
+                  <a href="#s2" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
+                    {t.nav.mission}
+                    <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  </a>
+                  <a href="#s3" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
+                    {t.nav.program}
+                    <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  </a>
+                  <a href="#s4" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
+                    {t.nav.advantages}
+                    <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  </a>
+                  <a href="#s5" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
+                    {t.nav.contacts}
+                    <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  </a>
                 </nav>
                 <div className="px-4 pb-4">
                   <div className="flex items-center gap-2 text-xs text-foreground/70 mb-3">

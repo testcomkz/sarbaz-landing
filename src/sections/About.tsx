@@ -54,8 +54,8 @@ export function About() {
         <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           {cards.map(({ title, description, image }, index) => (
             <Reveal key={title} delay={index * 0.05}>
-              <div className="group flex h-full flex-col overflow-hidden rounded-none border border-border/40 bg-card/70 shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
-                <div className="relative h-48 overflow-hidden">
+              <div className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-[rgba(8,29,49,0.55)] backdrop-blur-md shadow-[0_18px_40px_rgba(2,21,38,0.45)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_24px_55px_rgba(2,21,38,0.6)]">
+                <div className="relative h-52 overflow-hidden">
                   <Image
                     src={image}
                     alt={title}
@@ -64,20 +64,21 @@ export function About() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     priority={index === 0}
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#041529]/90 via-transparent to-transparent" />
                 </div>
-                <div className="relative flex flex-1 flex-col justify-between gap-5 p-6">
+                <div className="relative flex flex-1 flex-col justify-between gap-5 p-6 sm:p-7">
                   <div>
-                    <h3 className="font-heading text-lg sm:text-xl font-semibold uppercase tracking-wide text-primary">
+                    <h3 className="font-heading text-lg sm:text-xl font-semibold uppercase tracking-[0.2em] text-primary">
                       {title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground/90">
+                    <p className="mt-3 text-sm leading-relaxed text-foreground/80">
                       {description}
                     </p>
                   </div>
                   <div>
                     <a
                       href="#s5"
-                      className="flex w-full items-center justify-center gap-2 rounded-none bg-accent px-4 py-2 text-sm font-semibold uppercase text-accent-foreground transition-colors duration-300 hover:bg-accent/80"
+                      className="flex w-full items-center justify-center gap-2 rounded-xl bg-accent/90 px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-accent-foreground transition-colors duration-300 hover:bg-accent"
                     >
                       {t.contact.subtitle}
                       <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>

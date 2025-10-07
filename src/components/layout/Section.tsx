@@ -15,7 +15,7 @@ type SectionProps = {
 
 export function Section({ id, title, subtitle, className, children, bgImage }: SectionProps) {
   return (
-    <section id={id} className={cn("relative scroll-mt-24", className)}>
+    <section id={id} className={cn("relative scroll-mt-24 rounded-xl", className)}>
       {/* Background image + overlays */}
       {bgImage && (
         <>

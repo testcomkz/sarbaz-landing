@@ -55,39 +55,38 @@ export function InfoStrip() {
     if (locale === "ru") return feature.descRu;
     return feature.descEn;
   };
-
   return (
-    <div className="relative bg-primary py-10 sm:py-12 overflow-hidden mt-0">
+    <div className="relative overflow-hidden bg-[linear-gradient(135deg,#031d36_0%,#052b50_60%,#083559_100%)] py-10 sm:py-12 mt-0">
       {/* Pattern overlay */}
-      <div 
-        className="absolute inset-0 opacity-10"
+      <div
+        className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: "url('/img/pattern.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundSize: "220px",
+          backgroundPosition: "center",
+          backgroundColor: "rgba(7,25,43,0.6)",
         }}
       />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 sm:gap-7 md:grid-cols-2 xl:grid-cols-4">
           {features.map((feature, i) => (
             <div
               key={i}
-              className="flex flex-col items-center text-center gap-4 sm:flex-row sm:text-left sm:items-start"
+              className="group flex flex-col items-center text-center gap-4 sm:flex-row sm:text-left sm:items-start rounded-xl border border-white/10 bg-white/5 px-5 py-5 sm:px-6 sm:py-6 backdrop-blur-md shadow-[0_18px_40px_rgba(2,20,37,0.4)] transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="flex-shrink-0">
-                <Image 
-                  src={feature.icon} 
-                  alt={getTitle(feature)} 
-                  width={48} 
+                <Image
+                  src={feature.icon}
+                  alt={getTitle(feature)}
+                  width={48}
                   height={48}
-                  className="w-12 h-12 brightness-0"
+                  className="w-12 h-12 brightness-0 invert group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="max-w-sm sm:max-w-none">
-                <h3 className="font-heading text-base sm:text-lg font-bold text-black mb-1 sm:mb-2 uppercase tracking-wide">
+                <h3 className="font-heading text-base sm:text-lg font-semibold text-primary mb-1 sm:mb-2 uppercase tracking-[0.2em]">
                   {getTitle(feature)}
                 </h3>
-                <p className="text-sm leading-relaxed text-black/75">
+                <p className="text-sm leading-relaxed text-foreground/90">
                   {getDesc(feature)}
                 </p>
               </div>
