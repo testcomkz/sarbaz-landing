@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color tokens - Kazakhstan blue & gold palette */
+  --background: #031d36; /* Deep navy */
+  --foreground: #f7fcff; /* Crisp white */
+  --muted: #0d3a5c;
+  --muted-foreground: #c9e3f5;
+  --card: #0a2842;
+  --border: #1a4a72;
+  --primary: #fde566; /* Bright gold */
+  --primary-foreground: #1a1600;
+  --accent: #00b0c6; /* Turquoise blue */
+  --accent-foreground: #021821;
+  --secondary: #0f3c62;
+  --secondary-foreground: #f7fcff;
+  --ring: #00b0c6;
+  --destructive: #dc2626;
+  --input: #0f3c62;
+  --cta-whatsapp: #00a036; /* WhatsApp green */
+  --cta-whatsapp-hover: #008029;
+  --shadow-accent: rgba(0, 176, 198, 0.4);
+  --shadow-gold: rgba(253, 229, 102, 0.25);
+  /* Typography tokens are assigned in layout via CSS variables */
 }
 
 @theme inline {
+  /* Map CSS variables to Tailwind tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  /* Fonts */
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-oswald);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Keep dark as default; tokens already set for dark */
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Heading utility */
+.font-heading {
+  font-family: var(--font-oswald), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Accordion fallback animations for Radix */
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+[data-slot="accordion-content"][data-state="open"] {
+  animation: accordion-down 0.2s ease-out;
+}
+
+[data-slot="accordion-content"][data-state="closed"] {
+  animation: accordion-up 0.2s ease-out;
 }

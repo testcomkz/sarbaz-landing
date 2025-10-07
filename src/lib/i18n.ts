@@ -1,0 +1,401 @@
+export type Locale = "kz" | "ru" | "en";
+
+export const translations = {
+  kz: {
+    branding: {
+      name: "Бір күн арнайы қызметте",
+    },
+    seo: {
+      title: "Бір күн арнайы қызметте — Жастарға арналған патриоттық бағдарлама",
+      description:
+        "Қазақстандық жастарға арналған бір күндік арнайы қызмет тәжірибесі: тәртіп, шыдамдылық, әскери дайындық және командада жұмыс істеу",
+      keywords: [
+        "патриоттық бағдарлама",
+        "жастар лагері",
+        "тәртіп",
+        "арнайы қызмет",
+        "командалық дайындық",
+        "Алматы",
+        "әскери дайындық",
+      ],
+      ogTitle: "Бір күн арнайы қызметте — Батылдыққа жол",
+      ogDescription:
+        "Тәжірибелі нұсқаушылармен бірге бір күнде арнайы қызмет өмірін сезін. Командалық рух, физикалық шынығу және көшбасшылық қабілеттерін дамыт",
+    },
+    hero: {
+      title: "Бір күн",
+      titleHighlight: "арнайы қызметте",
+      subtitle: "Күшіңді сезін. Өзіңді тексер. Батылдығыңды аш.",
+      description: "Жасөспірімдер мен студенттерге арналған патриоттық бағдарлама: тәртіп, сипат, команда.",
+      cta: "WhatsApp-қа жазу",
+      viewProgram: "Бағдарламаны көру"
+    },
+    nav: {
+      mission: "Миссия",
+      program: "Бағдарлама",
+      advantages: "Артықшылықтар",
+      contacts: "Байланыс",
+      whatsapp: "WhatsApp"
+    },
+    mission: {
+      subtitle: "Біздің миссия",
+      title: "Біздің миссия",
+      intro: "Сипат күші, тәртіп және команда жұмысына шабыттандырамыз. Елге деген құрмет пен басқаларға көмектесуге дайындықты қалыптастырамыз. Бір күн - жауапкершілікке үлкен қадам.",
+      discipline: {
+        title: "Тәртіп",
+        description: "Жауапкершілік пен тәртіп қатысушының сипатын қалыптастырады."
+      },
+      teamwork: {
+        title: "Команда жұмысы",
+        description: "Бірге әрекет етуге және бір-бірімізді қолдауға үйренеміз."
+      },
+      spirit: {
+        title: "Рух күші",
+        description: "Қиындықтарды жеңе отырып, төзімділік пен өзіне сенімділік дамиды."
+      },
+      patriotism: {
+        title: "Патриотизм",
+        description: "Отанға деген құрмет пен қоғамға қызмет етудің маңыздылығын түсінеміз."
+      }
+    },
+    program: {
+      subtitle: "Сізді не күтеді",
+      title: "Сізді не күтеді?",
+      items: {
+        tactical: "Тактикалық дайындық",
+        obstacle: "Кедергілер жолы",
+        challenges: "Команда челленджі",
+        selfDefense: "Өзін-өзі қорғау",
+        firstAid: "Алғашқы көмек",
+        drill: "Строй тәртібі"
+      },
+      descriptions: {
+        tactical: "Құрамада және марш кезінде орындауға арналған кешенді тактикалық дайындық.",
+        obstacle: "Кедергілерден өту арқылы төзімділік пен күшті дамыту.",
+        challenges: "Командалық ынтымақтастықты арттыратын ортақ тапсырмалар.",
+        selfDefense: "Қарсыласу мен қорғаныс тәсілдері бойынша тәжірибелік сабақтар.",
+        firstAid: "Алғашқы медициналық көмек көрсету негіздері.",
+        drill: "Строй тәртібі мен тәртіпті қалыптастыру." 
+      },
+      cta: "Толығырақ"
+    },
+    advantages: {
+      subtitle: "Неге біз?",
+      title: "Неге біз?",
+      items: {
+        unique: "Қазақстанда бірегей",
+        instructors: "Шынайы нұсқаушылар",
+        character: "Сипат және тәртіп",
+        safe: "Қауіпсіз және бақылауда"
+      },
+      descriptions: {
+        unique: "Қазақстандағы жалғыз толыққанды патриоттық бағдарлама.",
+        instructors: "Әскери тәжірибесі бар кәсіби нұсқаушылар.",
+        character: "Рух күші, тәртіп және көшбасшылықты дамытамыз.",
+        safe: "Қауіпсіздік шаралары сақталған бақылаулы орта."
+      }
+    },
+    steps: {
+      subtitle: "Қалай қосылуға болады",
+      title: "Қалай қосылуға болады",
+      step1: {
+        title: "WhatsApp-қа жазыңыз",
+        description: "Сұрақтар қойыңыз, жылдам жауап алыңыз."
+      },
+      step2: {
+        title: "Бриф алыңыз",
+        description: "Біз толық ақпарат пен заттар тізімін жібереміз."
+      },
+      step3: {
+        title: "Қосылыңыз",
+        description: "Белгіленген күні келіп, бағдарламадан өтіңіз."
+      }
+    },
+    contact: {
+      subtitle: "Байланыс",
+      title: "Байланыс",
+      description: "WhatsApp арқылы бізге жазыңыз, Instagram-да жаңалықтарды қадағалаңыз немесе телефонмен хабарласыңыз.",
+      whatsapp: "WhatsApp",
+      instagram: "Instagram",
+      phone: "Телефон",
+      address: "Мекенжай",
+      addressDetail: "Алматы қ., Жандосов к-сі 51",
+      mapCta: "Алматы, Жандосов 51",
+      heroBadge: "Рух",
+      heroTitle: "Әрқашан байланыстамыз",
+      heroDescription: "«Бір күн арнайы қызметте» инструкторлары ата-аналар және қатысушылармен жедел байланыста."
+    },
+    footer: {
+      description: "Бір күн арнайы қызметте: тәртіп, сипат және команда. Жасөспірімдерге арналған мотивациялық бағдарлама.",
+      navigation: "Навигация",
+      contacts: "Байланыс",
+      copyright: "Бір күн арнайы қызметте"
+    }
+  },
+  ru: {
+    branding: {
+      name: "Один день в спецназе",
+    },
+    seo: {
+      title: "Один день в спецназе — Патриотическая программа для молодежи",
+      description:
+        "Казахстанская программа для подростков: дисциплина, командная работа, военная подготовка и лидерство под руководством инструкторов",
+      keywords: [
+        "патриотическая программа",
+        "спецназ",
+        "подростковый лагерь",
+        "дисциплина",
+        "командные тренировки",
+        "Алматы",
+        "военная подготовка",
+      ],
+      ogTitle: "Один день в спецназе — День, который меняет характер",
+      ogDescription:
+        "Пройди испытания спецназа вместе с профессиональными инструкторами: тактика, выносливость, первая помощь и работа в команде",
+    },
+    hero: {
+      title: "Один день в",
+      titleHighlight: "спецназе",
+      subtitle: "Почувствуй силу. Проверь себя. Открой свою смелость.",
+      description: "Патриотическая программа для подростков и студентов: дисциплина, характер, команда.",
+      cta: "Написать в WhatsApp",
+      viewProgram: "Смотреть программу"
+    },
+    nav: {
+      mission: "Миссия",
+      program: "Программа",
+      advantages: "Преимущества",
+      contacts: "Контакты",
+      whatsapp: "WhatsApp"
+    },
+    mission: {
+      subtitle: "Наша миссия",
+      title: "Наша миссия",
+      intro: "Вдохновляем на силу характера, дисциплину и командную работу. Формируем уважение к стране и готовность помогать другим. Один день — большой шаг к ответственности.",
+      discipline: {
+        title: "Дисциплина",
+        description: "Ответственность и порядок формируют характер участника."
+      },
+      teamwork: {
+        title: "Командная работа",
+        description: "Учимся действовать вместе и поддерживать друг друга."
+      },
+      spirit: {
+        title: "Сила духа",
+        description: "Преодолевая вызовы, растёт устойчивость и уверенность."
+      },
+      patriotism: {
+        title: "Патриотизм",
+        description: "Уважение к Родине и служение обществу."
+      }
+    },
+    program: {
+      subtitle: "Что вас ждёт",
+      title: "Что вас ждёт?",
+      items: {
+        tactical: "Тактическая подготовка",
+        obstacle: "Полоса препятствий",
+        challenges: "Командные челленджи",
+        selfDefense: "Самооборона",
+        firstAid: "Первая помощь",
+        drill: "Строевая дисциплина"
+      },
+      descriptions: {
+        tactical: "Комплексное обучение действиям в строю и на марше.",
+        obstacle: "Преодоление препятствий, развитие выносливости и силы.",
+        challenges: "Командные задачи на сплочение и взаимодействие.",
+        selfDefense: "Практика рукопашного боя и техники защиты.",
+        firstAid: "Основы оказания первой помощи при травмах.",
+        drill: "Строевая подготовка и дисциплина." 
+      },
+      cta: "Подробнее"
+    },
+    advantages: {
+      subtitle: "Почему мы?",
+      title: "Почему именно мы?",
+      items: {
+        unique: "Уникально в Казахстане",
+        instructors: "Настоящие инструкторы",
+        character: "Характер и дисциплина",
+        safe: "Безопасно и под контролем"
+      },
+      descriptions: {
+        unique: "Первая и единственная программа такого формата в Казахстане.",
+        instructors: "Профессиональные военные с реальным опытом.",
+        character: "Развитие силы духа, дисциплины и лидерства.",
+        safe: "Контролируемая и безопасная среда."
+      }
+    },
+    steps: {
+      subtitle: "Как присоединиться",
+      title: "Как присоединиться",
+      step1: {
+        title: "Напишите в WhatsApp",
+        description: "Задайте вопросы, получите быстрый ответ."
+      },
+      step2: {
+        title: "Получите бриф",
+        description: "Мы отправим подробную информацию и список вещей."
+      },
+      step3: {
+        title: "Присоединяйтесь",
+        description: "Приходите в назначенный день и проходите программу."
+      }
+    },
+    contact: {
+      subtitle: "Связаться с нами",
+      title: "Контакты",
+      description: "Напишите нам в WhatsApp, следите за новостями в Instagram или позвоните по телефону.",
+      whatsapp: "WhatsApp",
+      instagram: "Instagram",
+      phone: "Телефон",
+      address: "Адрес",
+      addressDetail: "г. Алматы, ул. Жандосова, 51",
+      mapCta: "г. Алматы, Жандосова 51",
+      heroBadge: "Боевой дух",
+      heroTitle: "Всегда на связи",
+      heroDescription: "Команда инструкторов «Бір күн арнайы қызметте» всегда готова к оперативной связи с родителями и участниками."
+    },
+    footer: {
+      description: "Один день в спецназе: дисциплина, характер и команда. Мотивационная программа для подростков.",
+      navigation: "Навигация",
+      contacts: "Контакты",
+      copyright: "Один день в спецназе"
+    }
+  },
+  en: {
+    branding: {
+      name: "One Day in Special Forces",
+    },
+    seo: {
+      title: "One Day in the Special Forces — Patriotic youth bootcamp in Kazakhstan",
+      description:
+        "Immersive special forces experience for teens: discipline, teamwork, tactical training, first aid and leadership guided by real instructors.",
+      keywords: [
+        "patriotic program",
+        "youth bootcamp",
+        "special forces",
+        "discipline",
+        "team building",
+        "Almaty",
+        "military training",
+      ],
+      ogTitle: "One Day in the Special Forces — Unlock your courage",
+      ogDescription:
+        "Join a one-day intensive led by experienced instructors. Build resilience, test your limits and strengthen leadership skills.",
+    },
+    hero: {
+      title: "One Day in the",
+      titleHighlight: "Special Forces",
+      subtitle: "Feel the strength. Test yourself. Discover your courage.",
+      description: "Patriotic program for teenagers and students: discipline, character, teamwork.",
+      cta: "Message on WhatsApp",
+      viewProgram: "View program"
+    },
+    nav: {
+      mission: "Mission",
+      program: "Program",
+      advantages: "Advantages",
+      contacts: "Contacts",
+      whatsapp: "WhatsApp"
+    },
+    mission: {
+      subtitle: "Our Mission",
+      title: "Our Mission",
+      intro: "We inspire strength of character, discipline and teamwork. We build respect for the country and willingness to help others. One day is a big step towards responsibility.",
+      discipline: {
+        title: "Discipline",
+        description: "Responsibility and order shape the participant's character."
+      },
+      teamwork: {
+        title: "Teamwork",
+        description: "We learn to act together and support each other."
+      },
+      spirit: {
+        title: "Spirit Strength",
+        description: "Overcoming challenges builds resilience and confidence."
+      },
+      patriotism: {
+        title: "Patriotism",
+        description: "Respect for the Motherland and service to society."
+      }
+    },
+    program: {
+      subtitle: "What Awaits You",
+      title: "What Awaits You?",
+      items: {
+        tactical: "Tactical Training",
+        obstacle: "Obstacle Course",
+        challenges: "Team Challenges",
+        selfDefense: "Self Defense",
+        firstAid: "First Aid",
+        drill: "Drill Training"
+      },
+      descriptions: {
+        tactical: "Comprehensive tactical skills for formation and field movements.",
+        obstacle: "Develop endurance and strength overcoming obstacles.",
+        challenges: "Team-based missions to build unity and coordination.",
+        selfDefense: "Hands-on self defense and protection techniques.",
+        firstAid: "Fundamentals of providing first aid during injuries.",
+        drill: "Drill practice and discipline." 
+      },
+      cta: "Learn more"
+    },
+    advantages: {
+      subtitle: "Why Us?",
+      title: "Why Choose Us?",
+      items: {
+        unique: "Unique in Kazakhstan",
+        instructors: "Real Instructors",
+        character: "Character and Discipline",
+        safe: "Safe and Supervised"
+      },
+      descriptions: {
+        unique: "The only comprehensive patriotic program in Kazakhstan.",
+        instructors: "Professional instructors with real military experience.",
+        character: "We build discipline, leadership, and resilience.",
+        safe: "A carefully supervised and safe environment."
+      }
+    },
+    steps: {
+      subtitle: "How to Join",
+      title: "How to Join",
+      step1: {
+        title: "Message on WhatsApp",
+        description: "Ask questions, get a quick answer."
+      },
+      step2: {
+        title: "Get the Brief",
+        description: "We will send detailed information and list of items."
+      },
+      step3: {
+        title: "Join Us",
+        description: "Come on the scheduled day and complete the program."
+      }
+    },
+    contact: {
+      subtitle: "Get in Touch",
+      title: "Contacts",
+      description: "Message us on WhatsApp, follow news on Instagram or call us by phone.",
+      whatsapp: "WhatsApp",
+      instagram: "Instagram",
+      phone: "Phone",
+      address: "Address",
+      addressDetail: "Almaty, Zhandosov St 51",
+      mapCta: "Almaty, Zhandosov 51",
+      heroBadge: "Spirit",
+      heroTitle: "Always in touch",
+      heroDescription: "The One Day in Special Forces instructors stay ready to connect with parents and participants."
+    },
+    footer: {
+      description: "One day in the special forces: discipline, character and teamwork. Motivational program for teenagers.",
+      navigation: "Navigation",
+      contacts: "Contacts",
+      copyright: "One Day in Special Forces"
+    }
+  }
+};
+
+export function getTranslation(locale: Locale) {
+  return translations[locale];
+}
