@@ -86,7 +86,7 @@ const Feature = ({
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-border group-hover/feature:bg-primary transition-all duration-200 origin-center" />
-        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block">
+        <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block whitespace-nowrap">
           {title}
         </span>
       </div>

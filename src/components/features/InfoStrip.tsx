@@ -5,10 +5,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const features = [
   {
     icon: "/img/tpl25_icon1_1.svg",
-    titleKz: "НҰСҚАУШЫЛАР",
+    titleKz: "БАПКЕРЛЕР",
     titleRu: "НАСТАВНИКИ",
     titleEn: "INSTRUCTORS",
-    descKz: "Бұрынғы әскерилер - барынша білімді командалардан тәжірибе алу",
+    descKz: "Бұрынғы арнайы сарбаздар – бар білімін саған үйретеді.",
     descRu: "Бывшие военные - большой образовательный опыт",
     descEn: "Former military - extensive educational experience"
   },
@@ -17,7 +17,7 @@ const features = [
     titleKz: "БАҒДАРЛАМА",
     titleRu: "ПРОГРАММА",
     titleEn: "PROGRAM",
-    descKz: "Толық курс: тактикалық боқсыр, және көптеген басқа бағдарламалар",
+    descKz: "Тактикалық бокс, дайындық, және басқа да мықты жаттығулар – бәрі бір курста!",
     descRu: "Полный курс: моментов боевых, и также множество других программ",
     descEn: "Full course: tactical training and many other programs"
   },
@@ -26,7 +26,7 @@ const features = [
     titleKz: "ПЕРСПЕКТИВА",
     titleRu: "ПЕРСПЕКТИВА",
     titleEn: "PERSPECTIVE",
-    descKz: "Оқуымдардың қалыптасуына гүріп пәсміналмалықдан ӘуҚыс",
+    descKz: "Бұл бағдарлама сені өзгертеді: сенімділік, тәжірибе, жаңа мүмкіндіктер.",
     descRu: "Оказываем поддержку при поступлении в профильные ВУЗы",
     descEn: "We support enrollment in specialized universities"
   },
@@ -35,7 +35,7 @@ const features = [
     titleKz: "БІЛІМ, ТӘЖІРИБЕ",
     titleRu: "ЗНАНИЯ, ОПЫТ",
     titleEn: "KNOWLEDGE, EXPERIENCE",
-    descKz: "Пайдалы навыктар алу, дүскен команда, баспанасы стать",
+    descKz: "Үйрен, өс, командамен бірге дамы! Бұл жерде әр күн – жаңа скилл мен жаңа сен.",
     descRu: "Приобретение полезных навыков, крепкая команда, безопасность стать",
     descEn: "Acquiring useful skills, strong team, becoming secure"
   }
