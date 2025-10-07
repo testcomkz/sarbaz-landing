@@ -2,7 +2,7 @@
 
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/animation/Reveal";
-import { Award, ShieldCheck, Sparkles, LifeBuoy } from "lucide-react";
+import { Award, ShieldCheck, Sparkles, LifeBuoy, LucideIcon } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
@@ -63,7 +63,7 @@ const Feature = ({
 }: {
   title: string;
   desc: string;
-  icon: any;
+  icon: LucideIcon;
   index: number;
 }) => {
   return (
