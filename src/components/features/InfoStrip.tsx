@@ -4,11 +4,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const features = [
   {
-    icon: "/img/tpl25_icon1_1.svg",
+    icon: "/img/Coa_arystan.svg.webp",
     titleKz: "БАПКЕРЛЕР",
     titleRu: "НАСТАВНИКИ",
     titleEn: "INSTRUCTORS",
-    descKz: "Бұрынғы арнайы сарбаздар – бар білімін саған үйретеді.",
+    descKz: "Арнайы жасакта кызмет еткен зейнеткерлер.",
     descRu: "Бывшие военные - большой образовательный опыт",
     descEn: "Former military - extensive educational experience"
   },
@@ -17,13 +17,13 @@ const features = [
     titleKz: "БАҒДАРЛАМА",
     titleRu: "ПРОГРАММА",
     titleEn: "PROGRAM",
-    descKz: "Тактикалық бокс, дайындық, және басқа да мықты жаттығулар – бәрі бір курста!",
+    descKz: "Тактикалық  дайындық, және басқа да мықты жаттығулар – бәрі бір курста!",
     descRu: "Полный курс: моментов боевых, и также множество других программ",
     descEn: "Full course: tactical training and many other programs"
   },
   {
     icon: "/img/tpl25_icon3_1.svg",
-    titleKz: "ПЕРСПЕКТИВА",
+    titleKz: "БОЛАШАҚТА",
     titleRu: "ПЕРСПЕКТИВА",
     titleEn: "PERSPECTIVE",
     descKz: "Бұл бағдарлама сені өзгертеді: сенімділік, тәжірибе, жаңа мүмкіндіктер.",
@@ -73,13 +73,13 @@ export function InfoStrip() {
               key={i}
               className="group flex flex-col items-center text-center gap-4 sm:flex-row sm:text-left sm:items-start rounded-xl border border-white/10 bg-white/5 px-5 py-5 sm:px-6 sm:py-6 backdrop-blur-md shadow-[0_18px_40px_rgba(2,20,37,0.4)] transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 flex items-center justify-center h-20">
                 <Image
                   src={feature.icon}
                   alt={getTitle(feature)}
-                  width={48}
-                  height={48}
-                  className="w-12 h-12 brightness-0 invert group-hover:scale-105 transition-transform duration-300"
+                  width={i === 0 ? 80 : i === 1 ? 30 : 48}
+                  height={i === 0 ? 80 : i === 1 ? 40 : 48}
+                  className={`group-hover:scale-105 transition-transform duration-300 ${ i === 0 ? '' : 'brightness-0 invert'}`}
                 />
               </div>
               <div className="max-w-sm sm:max-w-none">
