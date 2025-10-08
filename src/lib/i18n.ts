@@ -31,11 +31,23 @@ export const translations = {
       viewProgram: "Бағдарламаны қара"
     },
     nav: {
-      mission: "Мақсат",
-      program: "Бағдарлама",
-      advantages: "Артықшылықтар",
-      contacts: "Байланыс",
+      mission: "МАҚСАТ",
+      program: "БАҒДАРЛАМА",
+      advantages: "АРТЫҚШЫЛЫҚТAR",
+      heritage: "ҰЛТТЫҚ ЖЕКПЕ-ЖЕК",
+      contacts: "БАЙЛАНЫС",
       whatsapp: "WhatsApp"
+    },
+    heritage: {
+      subtitle: "Ұлттық жекпе-жек өнері",
+      title: "Ұлттық жекпе-жек өнері",
+      description: [
+        "Ұлттық жекпе-жек өнері — Ұлы Даланың батырлық жолын бүгінгі буынға қайта ұсынған жаңа стиль.",
+        "Біз ата-бабадан қалған тәртіпті қазіргі жаттығулармен ұштастырып, шымыр дене мен темірдей мінезді бірге қалыптастырамыз.",
+        "Әр қимылда еркін желдің тынысы мен самғаған бүркіттің күші сезіледі.",
+        "Бұл жол намыс пен жауапкершілікті сақтауды, өзіңді жеңуді және командамен бір толқында болуды үйретеді."
+      ],
+      cta: "Рухыңды оят, жауынгер жолын таңда"
     },
     mission: {
       subtitle: "Мақсатымыз",
@@ -162,11 +174,23 @@ export const translations = {
       viewProgram: "Смотреть программу"
     },
     nav: {
-      mission: "Миссия",
-      program: "Программа",
-      advantages: "Преимущества",
-      contacts: "Контакты",
+      mission: "МИССИЯ",
+      program: "ПРОГРАММА",
+      advantages: "ПРЕИМУЩЕСТВА",
+      heritage: "Нац. боевое искусство",
+      contacts: "КОНТАКТЫ",
       whatsapp: "WhatsApp"
+    },
+    heritage: {
+      subtitle: "Национальное боевое искусство",
+      title: "Национальное боевое искусство — новая эра силы духа",
+      description: [
+        "Национальное боевое искусство (Ұлттық жекпе-жек өнері) рождается из традиций степных воинов, становясь дисциплиной для современного поколения.",
+        "Мы объединяем наследие предков с современной подготовкой, закаляя тело, характер и верность своей земле.",
+        "Каждое движение — это ветер степи и полёт беркута, поднимающие уверенность выше горизонта.",
+        "Этот путь учит держать слово, побеждать сомнения и идти вперёд плечом к плечу."
+      ],
+      cta: "Пробуди силу предков"
     },
     mission: {
       subtitle: "Наша миссия",
@@ -293,11 +317,23 @@ export const translations = {
       viewProgram: "View program"
     },
     nav: {
-      mission: "Mission",
-      program: "Program",
-      advantages: "Advantages",
-      contacts: "Contacts",
+      mission: "MISSION",
+      program: "PROGRAM",
+      advantages: "ADVANTAGES",
+      heritage: "MARTIAL HERITAGE",
+      contacts: "CONTACTS",
       whatsapp: "WhatsApp"
+    },
+    heritage: {
+      subtitle: "National Martial Art",
+      title: "National Martial Art — a new era of spirit and strength",
+      description: [
+        "The National Martial Art (Ұлттық жекпе-жек өнері) rises from the warrior traditions of the Great Steppe, reshaped for a new generation.",
+        "We fuse ancestral honor with modern training to forge disciplined, resilient fighters devoted to their land.",
+        "Each motion carries the steppe wind and the eagle’s climb, lifting courage above the horizon.",
+        "This path calls for honor, self-mastery, and loyalty to the legacy that guides every warrior forward."
+      ],
+      cta: "Step onto the warrior’s path"
     },
     mission: {
       subtitle: "Our Mission",

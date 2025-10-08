@@ -18,10 +18,27 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
+      <div className="max-w-8xl mx-auto px-3 sm:px-6 lg:px-10 min-h-[4.75rem] py-1 flex items-center justify-between gap-10">
         <div className="flex items-center gap-3 min-w-0">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/logo.svg" alt="Program logo" width={64} height={64} priority className="w-14 h-14 sm:w-16 sm:h-16" />
+            <div className="flex items-center gap-1">
+              <Image
+                src="/logo.svg"
+                alt="Program logo"
+                width={80}
+                height={80}
+                priority
+                className="w-14 h-14 sm:w-20 sm:h-20"
+              />
+              <Image
+                src="/partner-logo.svg"
+                alt="Partner logo"
+                width={96}
+                height={96}
+                priority
+                className="w-20 h-20 sm:w-[6.5rem] sm:h-[6.5rem]"
+              />
+            </div>
             <span className="font-heading text-lg sm:text-xl font-bold uppercase hidden sm:block">
               {t.branding.name}
             </span>
@@ -48,6 +65,13 @@ export function Navbar() {
             className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
           >
             {t.nav.advantages}
+            <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+          </a>
+          <a
+            href="#heritage"
+            className="relative px-1 py-1 text-foreground/85 transition-colors group hover:text-primary"
+          >
+            {t.nav.heritage}
             <span className="pointer-events-none absolute left-0 -bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
           </a>
           <a
@@ -92,7 +116,10 @@ export function Navbar() {
               </DialogTrigger>
               <DialogContent className="sm:max-w-sm p-0 overflow-hidden">
                 <div className="border-b border-border/60 px-4 py-3 flex items-center gap-3">
-                  <Image src="/logo.svg" alt="Program logo" width={48} height={48} className="w-12 h-12" />
+                  <div className="flex items-center gap-3">
+                    <Image src="/logo.svg" alt="Program logo" width={60} height={60} className="w-12 h-12" />
+                    <Image src="/partner-logo.svg" alt="Partner logo" width={72} height={72} className="w-14 h-14" />
+                  </div>
                   <span className="font-heading text-base font-bold uppercase">Бір күн арнайы қызметте</span>
                 </div>
                 <nav className="flex flex-col px-4 py-6 gap-2 text-sm border-b border-border/60">
@@ -106,6 +133,10 @@ export function Navbar() {
                   </a>
                   <a href="#s4" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
                     {t.nav.advantages}
+                    <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
+                  </a>
+                  <a href="#heritage" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">
+                    {t.nav.heritage}
                     <span className="pointer-events-none absolute left-0 bottom-1 h-[2px] w-full scale-x-0 transform rounded-full bg-primary transition-transform duration-300 origin-right group-hover:scale-x-100 group-hover:origin-left" />
                   </a>
                   <a href="#s5" className="group relative py-2 text-foreground/85 transition-colors hover:text-primary">

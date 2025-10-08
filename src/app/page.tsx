@@ -2,6 +2,7 @@ import { Hero } from "@/sections/Hero";
 import { About } from "@/sections/About";
 import { Program } from "@/sections/Program";
 import { Advantages } from "@/sections/Advantages";
+import { Heritage } from "@/sections/Heritage";
 import { Contact } from "@/sections/Contact";
 import { InfoStrip } from "@/components/features/InfoStrip";
 
@@ -13,6 +14,7 @@ export default function Page() {
       <About />
       <Program />
       <Advantages />
+      <Heritage />
       <Contact />
     </>
   );

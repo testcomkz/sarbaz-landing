@@ -21,6 +21,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <Image src="/logo.svg" alt="Logo" width={72} height={72} className="w-16 h-16" />
+              <Image src="/partner-logo.svg" alt="Logo" width={72} height={72} className="w-18 h-18" />
               <span className="font-heading uppercase text-xl font-bold tracking-[0.3em] text-white">{t.branding.name}</span>
             </div>
             <p className="text-sm text-foreground/75 max-w-sm">
