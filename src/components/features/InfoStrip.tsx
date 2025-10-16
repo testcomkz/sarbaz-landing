@@ -8,7 +8,7 @@ const features = [
     titleKz: "БАПКЕРЛЕР",
     titleRu: "НАСТАВНИКИ",
     titleEn: "INSTRUCTORS",
-    descKz: "Арнайы жасакта кызмет еткен зейнеткерлер.",
+    descKz: "Арнайы жасақта кызмет еткен зейнеткерлер.",
     descRu: "Бывшие военные - большой образовательный опыт",
     descEn: "Former military - extensive educational experience"
   },
